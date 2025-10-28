@@ -1,61 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# project-pengaduan-masyarakat-rian-fikri-hafiz-250458302040
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi Sistem Informasi Pelaporan dan Pengaduan Masyarakat.
 
-## About Laravel
+## 👥 Kontributor
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Proyek ini dikembangkan oleh:
+* Rian
+* Fikri
+* Hafiz
+* (Kode Identifikasi Proyek: 250458302040)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 💡 Deskripsi Proyek
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aplikasi **Pengaduan Masyarakat** adalah sebuah platform digital yang dirancang untuk memfasilitasi warga dalam melaporkan masalah, keluhan, atau isu-isu yang ditemukan dalam kehidupan sehari-hari secara langsung kepada pihak pemerintah atau instansi terkait. Tujuannya adalah menciptakan transparansi dan mempercepat proses tindak lanjut atas laporan publik.
 
-## Learning Laravel
+## 🛠️ Teknologi yang Digunakan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Proyek ini dibangun menggunakan **TALL Stack**, yang merupakan singkatan dari:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* **T**ailwind CSS (Untuk desain antarmuka)
+* **A**lpine.js (Untuk interaktivitas JavaScript yang ringan)
+* **L**aravel (Framework utama untuk *backend*)
+* **L**ivewire (Untuk komponen *full-stack* yang dinamis)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Panduan Instalasi dan Menjalankan Proyek (Setup Rigoris)
 
-## Laravel Sponsors
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal kamu.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Pra-syarat (Prerequisite)
 
-### Premium Partners
+Pastikan kamu sudah menginstal:
+* PHP (versi 8.0 atau lebih tinggi)
+* Composer
+* Node.js dan npm
+* Database (MySQL/MariaDB disarankan)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Langkah-langkah
 
-## Contributing
+1.  **Kloning Repositori:**
+    Buka Terminal/Command Prompt, lalu *clone* kode sumber:
+    ```bash
+    git clone [GANTI_DENGAN_URL_REPOSITORI_KAMU]
+    cd project-pengaduan-masyarakat
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2.  **Instalasi Dependencies PHP:**
+    Instal semua paket PHP yang diperlukan menggunakan Composer:
+    ```bash
+    composer install
+    ```
 
-## Code of Conduct
+3.  **Konfigurasi Environment:**
+    Salin *file* environment contoh dan buat kunci aplikasi:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    (Jangan lupa atur kredensial database di *file* `.env`.)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4.  **Migrasi Database:**
+    Jalankan migrasi untuk membuat tabel-tabel database:
+    ```bash
+    php artisan migrate
+    ```
 
-## Security Vulnerabilities
+5.  **Instalasi Dependencies Frontend (Node.js):**
+    Instal paket frontend (seperti Tailwind CSS) menggunakan npm:
+    ```bash
+    npm install
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6.  **Kompilasi dan Jalankan Server:**
+    Buka **dua terminal** yang berbeda:
 
-## License
+    **Terminal 1 (Untuk *Assets*):**
+    Jalankan *watcher* untuk mengompilasi CSS/JS saat kamu melakukan perubahan:
+    ```bash
+    npm run dev
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    **Terminal 2 (Untuk Server Laravel):**
+    Jalankan server aplikasi Laravel:
+    ```bash
+    php artisan serve
+    ```
+
+Aplikasi kini dapat diakses melalui browser di alamat `http://127.0.0.1:8000` (atau port lain yang ditunjukkan).
+
