@@ -1,81 +1,78 @@
-# project-pengaduan-masyarakat-rian-fikri-hafiz-250458302040
+# EReport-App-Reva-Dede-Pratama-250458302017
+1st Semester Software Engineering Major Project Task at IDN Polytechnic, Jonggol, Bogor, West Java, Indonesia.
 
-Aplikasi Sistem Informasi Pelaporan dan Pengaduan Masyarakat.
 
-## 💡 Deskripsi Proyek
+## 💡 Project Description
 
-Aplikasi **Pengaduan Masyarakat** adalah sebuah platform digital yang dirancang untuk memfasilitasi warga dalam melaporkan masalah, keluhan, atau isu-isu yang ditemukan dalam kehidupan sehari-hari secara langsung kepada pihak pemerintah atau instansi terkait. Tujuannya adalah menciptakan transparansi dan mempercepat proses tindak lanjut atas laporan publik.
+The **EReport-App** is a digital platform designed to facilitate citizens in reporting problems, complaints, or issues encountered in their daily lives directly to the government or relevant authorities. The application aims to enhance transparency and expedite the resolution process for public reports. This project is Using Indonesian Language.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
-Proyek ini dibangun menggunakan **TALL Stack**, yang merupakan singkatan dari:
+This project is built using the **TALL Stack**, which is an acronym for:
+* **T**ailwind CSS (For UI/UX design)
+* **A**lpine.js (For lightweight JavaScript interactivity)
+* **L**aravel (The primary *backend* framework)
+* **L**ivewire (For dynamic *full-stack* components)
 
-* **T**ailwind CSS (Untuk desain antarmuka)
-* **A**lpine.js (Untuk interaktivitas JavaScript yang ringan)
-* **L**aravel (Framework utama untuk *backend*)
-* **L**ivewire (Untuk komponen *full-stack* yang dinamis)
+## 🚀 Getting Started & Installation Guide
 
-## 🚀 Panduan Instalasi dan Menjalankan Proyek (Setup Rigoris)
+Follow these steps to run this project in your local environment.
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di localhost anda.
+### Prerequisites
 
-### Pra-syarat (Prerequisite)
-
-Pastikan git add sudah menginstal:
-* PHP (versi 8.0 atau lebih tinggi)
+Ensure you have the following installed on your system:
+* PHP (version 8.0 or higher)
 * Composer
-* Node.js dan npm
-* Database (MySQL/MariaDB disarankan)
+* Node.js and npm
+* A database (MySQL/MariaDB is recommended)
 
-### Langkah-langkah
+### Step-by-Step Installation
 
-1.  **Kloning Repositori:**
-    Buka Terminal/Command Prompt, lalu *clone* kode sumber:
+1.  **Clone the Repository:**
+    Open your Terminal/Command Prompt and clone the source code:
     ```bash
-    git clone [GANTI_DENGAN_URL_REPOSITORI_anda]
-    cd project-pengaduan-masyarakat
-    ```
 
-2.  **Instalasi Dependencies PHP:**
-    Instal semua paket PHP yang diperlukan menggunakan Composer:
+    git clone https://github.com/RevanPratama25/EReport-App-Reva-Dede-Pratama-250458302017.git
+   
+2.  **Install PHP Dependencies:**
+    Install all required PHP packages using Composer:
     ```bash
     composer install
     ```
 
-3.  **Konfigurasi Environment:**
-    Salin *file* environment contoh dan buat kunci aplikasi:
+3.  **Configure the Environment:**
+    Copy the example environment file and generate the application key:
     ```bash
     cp .env.example .env
     php artisan key:generate
     ```
-    (Jangan lupa atur kredensial database di *file* `.env`.)
+    (Remember to set your database credentials in the `.env` file.)
 
-4.  **Migrasi Database:**
-    Jalankan migrasi untuk membuat tabel-tabel database:
+4.  **Run Database Migrations:**
+    Run the migrations to create the database tables:
     ```bash
     php artisan migrate
     ```
 
-5.  **Instalasi Dependencies Frontend (Node.js):**
-    Instal paket frontend (seperti Tailwind CSS) menggunakan npm:
+5.  **Install Frontend Dependencies (Node.js):**
+    Install the frontend packages (like Tailwind CSS) using npm:
     ```bash
     npm install
     ```
 
-6.  **Kompilasi dan Jalankan Server:**
-    Buka **dua terminal** yang berbeda:
+6.  **Compile Assets and Run the Server:**
+    You will need to open **two separate terminal** sessions:
 
-    **Terminal 1 (Untuk *Assets*):**
-    Jalankan *watcher* untuk mengompilasi CSS/JS saat anda melakukan perubahan:
+    **Terminal 1 (For Assets):**
+    Run the development watcher to compile CSS/JS as you make changes:
     ```bash
     npm run dev
     ```
 
-    **Terminal 2 (Untuk Server Laravel):**
-    Jalankan server aplikasi Laravel:
+    **Terminal 2 (For the Laravel Server):**
+    Run the Laravel application server:
     ```bash
     php artisan serve
     ```
 
-Aplikasi kini dapat diakses melalui browser di alamat `http://127.0.0.1:8000` (atau port lain yang ditunjukkan).
-
+The application is now accessible via your browser at `http://127.0.0.1:8000` (or the port indicated).
