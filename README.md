@@ -2,14 +2,6 @@
 
 Aplikasi Sistem Informasi Pelaporan dan Pengaduan Masyarakat.
 
-## 👥 Kontributor
-
-Proyek ini dikembangkan oleh:
-* Rian
-* Fikri
-* Hafiz
-* (Kode Identifikasi Proyek: 250458302040)
-
 ## 💡 Deskripsi Proyek
 
 Aplikasi **Pengaduan Masyarakat** adalah sebuah platform digital yang dirancang untuk memfasilitasi warga dalam melaporkan masalah, keluhan, atau isu-isu yang ditemukan dalam kehidupan sehari-hari secara langsung kepada pihak pemerintah atau instansi terkait. Tujuannya adalah menciptakan transparansi dan mempercepat proses tindak lanjut atas laporan publik.
@@ -25,11 +17,11 @@ Proyek ini dibangun menggunakan **TALL Stack**, yang merupakan singkatan dari:
 
 ## 🚀 Panduan Instalasi dan Menjalankan Proyek (Setup Rigoris)
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal kamu.
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di localhost anda.
 
 ### Pra-syarat (Prerequisite)
 
-Pastikan kamu sudah menginstal:
+Pastikan git add sudah menginstal:
 * PHP (versi 8.0 atau lebih tinggi)
 * Composer
 * Node.js dan npm
@@ -40,7 +32,7 @@ Pastikan kamu sudah menginstal:
 1.  **Kloning Repositori:**
     Buka Terminal/Command Prompt, lalu *clone* kode sumber:
     ```bash
-    git clone [GANTI_DENGAN_URL_REPOSITORI_KAMU]
+    git clone [GANTI_DENGAN_URL_REPOSITORI_anda]
     cd project-pengaduan-masyarakat
     ```
 
@@ -74,7 +66,7 @@ Pastikan kamu sudah menginstal:
     Buka **dua terminal** yang berbeda:
 
     **Terminal 1 (Untuk *Assets*):**
-    Jalankan *watcher* untuk mengompilasi CSS/JS saat kamu melakukan perubahan:
+    Jalankan *watcher* untuk mengompilasi CSS/JS saat anda melakukan perubahan:
     ```bash
     npm run dev
     ```
