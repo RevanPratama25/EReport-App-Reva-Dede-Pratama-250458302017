@@ -6,7 +6,7 @@
         <th scope="col" class="px-6 py-4 font-semibold">Judul</th>
         <th scope="col" class="px-6 py-4 font-semibold">foto</th>
         <th scope="col" class="px-6 py-4 font-semibold text-center">detail</th>
-        <th scope="col" class="px-6 py-4 font-semibold text-right">Gaji Pokok</th>
+        <th scope="col" class="px-6 py-4 font-semibold text-right">Desc</th>
         <th scope="col" class="px-6 py-4 font-semibold text-center">Aksi</th>
       </tr>
     </thead>
